@@ -21,12 +21,14 @@
   
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
   <link rel="shortcut icon" href="images/favicon.ico">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js"></script>
 </head><!--/head-->
 
-<body>
+<body ng-app="">
 
   <!--.preloader-->
-  <div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>
+  <!-- div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div -->
   <!--/.preloader-->
 
   <header id="home">
@@ -34,11 +36,17 @@
       <div class="carousel-inner">
         <div class="item active" style="background-image: url(images/slider/1.jpg)">
           <div class="caption">
-            <h1 class="animated fadeInLeftBig">Welcome to <span>Oxygen</span></h1>
-            <p class="animated fadeInRightBig">Bootstrap - Responsive Design - Retina Ready - Parallax</p>
+            <h1 class="animated fadeInLeftBig">Welcome to <span>PreAngel</span></h1>
+            <p class="animated fadeInRightBig">你的职业联合创始人服务</p>
+            <br />
+            <br />
+            <br />
+            <p class="animated fadeInRightBig">网站维护中…… 欢迎一周后再回来。</p>
+            <p class="animated fadeInRightBig">投递商业计划书，请发送到： bp@pre-angel.com ，同时抄送至： zixia@pre-angel.com 。</p>
             <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Start now</a>
           </div>
         </div>
+    <div ng-if="false">
         <div class="item" style="background-image: url(images/slider/2.jpg)">
           <div class="caption">
             <h1 class="animated fadeInLeftBig">Say Hello to <span>Oxygen</span></h1>
@@ -54,13 +62,14 @@
           </div>
         </div>
       </div>
+   </div>
       <a class="left-control" href="#home-slider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
       <a class="right-control" href="#home-slider" data-slide="next"><i class="fa fa-angle-right"></i></a>
 
       <a id="tohash" href="#services"><i class="fa fa-angle-down"></i></a>
 
     </div><!--/#home-slider-->
-    <div class="main-nav">
+    <div class="main-nav" ng-if="false">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -87,6 +96,7 @@
       </div>
     </div><!--/#main-nav-->
   </header><!--/#home-->
+<div ng-if="false">
   <section id="services">
     <div class="container">
       <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
@@ -798,6 +808,7 @@
       </div>
     </div>
   </footer>
+</div> <!-- ng-if END -->
 
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>

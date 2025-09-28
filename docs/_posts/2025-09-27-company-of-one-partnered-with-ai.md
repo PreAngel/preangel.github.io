@@ -4,12 +4,10 @@ description: "A letter from the Founding Human of PreAngel on building AI-native
 author: "Huan Li"
 date: 2025-09-27
 tags:
+  - home
   - AI
-  - ReKey
-  - ReMic
   - ShipFail
   - Solo Founder
-  - Agents
 image: assets/2025/09-company-of-one-partnered-with-ai/ai-native-incubator.webp
 ---
 

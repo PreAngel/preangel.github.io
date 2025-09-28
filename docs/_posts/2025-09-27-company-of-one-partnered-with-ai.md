@@ -96,3 +96,66 @@ I believe in that future — and I'm shipping it, one small bet at a time.
 Warmly,  
 **Huan Li**  
 *Founding Human & Architect @ PreAngel*
+
+---
+
+> If you've made it this far, thank you. For those curious about how I actually work and what I practice — here’s a peek into the skills I’ve been cultivating as I build PreAngel, ReKey, ReMic, and everything in between.
+
+## 🧠 Founder Skill Tree — What I’ve Been Practicing at PreAngel
+
+Sometimes, building a company of one means wearing every hat — architect, poet, operator, explorer. Below are the principles and practices I return to often as I build ReKey, ReMic, and whatever’s next:
+
+### 🧠 **AI Native**  
+
+**Designing products where AI isn’t an add-on — it *is* the architecture.**  
+At PreAngel, every tool starts from an AI-first core, not a retrofit.
+
+### 🤝 **Human AI Interaction**  
+
+**Crafting systems where AI collaborates with humans, not replaces them.**  
+Interfaces are designed to feel like partnerships, not command lines.
+
+### 🧩 **AI First**  
+
+**Building user experiences optimized for real-time, generative collaboration.**  
+I rethink UI/UX through the lens of how LLMs respond, adapt, and fail gracefully.
+
+### 💡 **Idea Incubation**  
+
+**Turning raw sparks into testable products through rapid iteration.**  
+Ship.Fail is my founder lab — a studio model built into a solo startup.
+
+### 🌀 **Design Sprints**  
+
+**Time-boxed creative bursts for validating bold product ideas.**  
+At PreAngel, sprints drive momentum, clarity, and continuous shipping.
+
+### 🔁 **Build Fail Learn Loop**  
+
+**Shipping fast, failing publicly, learning deeply.**  
+Every experiment at PreAngel fuels the next — from microtools to agent behaviors.
+
+### ⚡ **One Day Product Building**  
+
+**From concept to working MVP in 24 hours.**  
+This is how I sharpen instincts, test assumptions, and move ideas forward without friction.
+
+### 🛠️ **Solo Founder Systems**  
+
+**Scalable workflows for building, shipping, and iterating as a team of one.**  
+I automate and templatize everything from launches to feedback to learning loops.
+
+### 🧘 **Fail Forward Product Mindset**  
+
+**Using failure as a feature, not a flaw.**  
+Ship.Fail is a philosophy — not just about surviving missteps, but growing through them.
+
+### 🎯 **Small Bets Strategy**  
+
+**Placing focused, minimal-risk bets across many ideas.**  
+Instead of chasing unicorns, I explore multiple pathways and double down on signal.
+
+### 🧬 **Narrative Driven Product Design**  
+
+**Designing tools that tell stories, not just perform functions.**  
+From interface copy to agent personalities, every product reflects emotional clarity and intent.

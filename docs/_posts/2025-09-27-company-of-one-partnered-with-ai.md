@@ -10,10 +10,10 @@ tags:
   - ShipFail
   - Solo Founder
   - Agents
-image: assets/2025/09-company-of-one-partnered-with-ai/blog-banner.webp
+image: assets/2025/09-company-of-one-partnered-with-ai/ai-native-incubator.webp
 ---
 
-> *“One human. Many agents. Infinite experiments.”*
+> One human. Many agents. Infinite experiments.
 
 Hi, I’m Huan — the **Founding Human** behind [PreAngel](https://pre-angel.com), a one‑person startup that doesn’t build alone.
 

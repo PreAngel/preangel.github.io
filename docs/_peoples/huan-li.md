@@ -2,49 +2,100 @@
 name: Huan Li
 site: https://github.com/huan
 avatar: /assets/peoples/huan-li/avatar.jpg
-bio: PreAngel Partner, Chatbot Producer & Enthusiast, AI/ML Applicator, Open-Source Software Builder. 💸🧠🤖🖥👨‍💻⌨️
+bio: One-person startup lab exploring co-creation with autonomous AI agents.
 email: huan@pre-angel.com
 twitter: https://twitter.com/huan2024
 crunchbase: https://www.crunchbase.com/person/zhuohuan-li
 linkedin: https://linkedin.com/in/huan42
 ---
 
-Huan Li, PreAngel Partner, Plug and Play Venture Partner, Chatbot Architect.
+👋 Hey there — Huan here, solo founder currently building PreAngel, an AI-native, one-person incubator.
 
-zixia BBS、优酷网（首席科学家）、叽歪网创始人，水木清华BBS站长。清华大学本科，中欧国际工商学院EMBA。
+I’m focused on exploring what it means to **co-build with agents** from day one — not just bolting on AI, but designing workflows, tools, and interfaces around human-AI collaboration as the core architecture.
 
-15年互联网创业经验。作为LP投资了中美多支天使基金。中国天使联合会创始理事，清华企业家协会（TEEC）人工智能委员会主任委员，多家创业公司和 VC 机构顾问。创业邦、创业家、新浪网等媒体都对他作过创业特别报道。
+I also run **Ship.Fail**, a hackathon-style lab for rapid one-day product experiments. Think “build fast, fail forward, learn out loud.”
 
-20余年编程经验，曾任 ChinaRen 系统工程师。著有《Linux网络编程》、《反垃圾邮件完全手册》、[《智能对话与深度学习》](https://item.jd.com/12479014.html)、[《Chatbot从0到1》](https://item.jd.com/12630213.html)、[《简明的TensorFlow 2》](https://item.jd.com/12980534.html)等技术图书。[Microsoft Regional Director](https://rd.microsoft.com/en-us/huan-li)，[Google 认证机器学习开发者专家(_ML GDE, Machine Learning Google Developer Expert_)](https://developers.google.com/community/experts/directory/profile/profile-huan-li)，[腾讯认证聊天机器人专家（_Chatbot TVP, Tencent Valuable Professional,_）](https://cloud.tencent.com/tvp/138)。活跃在 Open Source 社区，创立发布的 [Chatbot SDK 开源项目 Wechaty](https://github.com/wechaty/wechaty) 已在 Github 上拥有近万 Stars 数。
+My background blends product architecture, language UX, and agent orchestration. If you're working on **AI-native tools**, **solo founder systems**, or experimenting with **multi-agent coordination**, I’d love to connect, jam, or swap ideas.
 
-投资企业包括：蓝信、时光小屋、IT桔子、互动吧、七八点、蒲公英、菠萝格斗、中体飞行、中羽联、VoCore、凌宇智控、省心办、领签、句子互动、硅心科技、联络易、微印、ChatOpera、SIGAI、Authing、创新冲刺、MistGPU、魔音助手、里云智造、深度对话等。
+Looking forward to learning from this group 🙌
+
+**What I can help with:**  
+
+- Building AI-native products with agents  
+- Solo founder systems & small bets strategy  
+- One-day hackathon sprints ([Ship.Fail](https://ship.fail) style)  
+- Prompt + interface co-design  
+- Architecting human-AI workflows that feel collaborative
+
+# About Huan Li
+
+**I’m a solo founder architecting AI-native tools — working with agents, not just algorithms.**
+
+---
+
+I run **PreAngel**, an AI-native, one-person incubator focused on building tools that help humans and machines communicate more fluently. My approach blends **agent-based architecture**, **human-AI interaction design**, and **narrative-driven systems**. Everything I ship starts with the assumption that **AI is not a feature — it's a co-founder**.
+
+Through **Ship.Fail**, I lead a hackathon-style community for rapid product experimentation. We explore ideas through one-day builds, small bets, and fail-forward iterations — all in the open.
+
+---
+
+## Biography
+
+Previously, I co-founded and advised multiple tech startups across China and Silicon Valley, served as Chief Scientist at Youku, and founded **JiWai.com** (the Twitter of China). I was also the **SysAdmin of SMTH(水木清华) BBS**, where I learned how online communities think, grow, and evolve.
+
+I graduated from **Tsinghua University**, and hold an EMBA from **CEIBS**.
+
+With over **20 years of programming experience**, I've authored several technical books including:
+
+- [Intelligent Dialogue and Deep Learning](https://item.jd.com/12479014.html)  
+- [Chatbot: From 0 to 1](https://item.jd.com/12630213.html)  
+- [Concise TensorFlow 2](https://item.jd.com/12980534.html)
+
+I'm also recognized as a:
+
+- [Google Developer Expert in Machine Learning](https://developers.google.com/community/experts/directory/profile/profile-huan-li)
+- [Microsoft Regional Director](https://rd.microsoft.com/en-us/huan-li)
+- [GitHub Star](https://stars.github.com/profiles/huan/)
+
+In the open source world, I created [Wechaty](https://github.com/wechaty/wechaty), a conversational RPA framework that now has over **10k GitHub stars**.
+
+---
+
+## Selected Portfolio Highlights
+
+Startups I’ve helped build or invest in include: LanXin, TimeHut, ITJuzi, VoCore, NOLO, JuziBot, Authing, MistGPU, and more.
+
+---
+
+## Life Beyond Code
 
 ![Ski & Snowboard](/assets/peoples/huan-li/snowboard.jpg)
 
-热衷于极限运动，喜欢和勇敢、富有激情、愿意接受新鲜事物并不断挑战突破自己的人做朋友。
+I love skiing, salsa, MMA, paragliding, and anything that pushes the body to match the mind’s pace.
 
 ![Paragliding](/assets/peoples/huan-li/paragliding.jpg)
 
-生活中喜爱跑步、滑雪、SALSA、MMA、跑酷、滑翔伞等极限运动。
+I enjoy running, snowboarding, and extreme sports with brave, curious people who constantly challenge themselves.
 
 ![Jack Ma(马云), Huan Li, Stephen Chow(周星驰)](/assets/peoples/huan-li/mayun-huan-zhouxingchi-20130104.jpg)
 
 > Jack Ma(马云), Huan Li, Stephen Chow(周星驰)
 
-最爱大话西游。热衷于无厘头文化。生命中最看重的两个词是：健康和快乐。
+My favorite movie? A Chinese Odyssey (大话西游).  
+My core values? **Health** and **Happiness**.
+
+---
 
 ## Contact
 
-- Github: <https://github.com/huan>
-- Linkedin: <https://linkedin.com/in/huan42>
-- Twitter: [@huan2024](https://twitter.com/huan2024)
+- GitHub: <https://github.com/huan>
+- LinkedIn: <https://linkedin.com/in/huan42>
+- Twitter/X: [@huan2024](https://twitter.com/huan2024)
 - Email: <huan@pre-angel.com>
 
-## As an AI Professional & ML Expert
+---
 
-> I focus on helping Artificial Intelligence Startups  
-> to use the State-Of-The-Art Machine Learning Algorithms  
-> to solve the Real-world Problem.  
+> "Build with agents. Ship with soul. Evolve through failure."
 
 <!-- Calendly badge widget begin -->
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">

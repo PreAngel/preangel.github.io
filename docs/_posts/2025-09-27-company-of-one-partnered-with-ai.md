@@ -13,7 +13,7 @@ image: assets/2025/09-company-of-one-partnered-with-ai/ai-native-incubator.webp
 
 > One human. Many agents. Infinite experiments.
 
-Hi, I’m Huan — the **Founding Human** behind [PreAngel](https://pre-angel.com), a one‑person startup that doesn’t build alone.
+Hi, I’m Huan — the **Founding Human** behind [PreAngel](https://pre-angel.com), a one‑person startup incubator that doesn’t build alone.
 
 At first glance, PreAngel might look like a solo venture. But in practice, it’s a **company of one** working side by side with autonomous AI agents — named, role‑defined, memory‑augmented, and deeply integrated into how I design, build, and ship products.
 

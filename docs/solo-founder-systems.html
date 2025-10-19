@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PreAngel — Solo Founder Systems</title>
+  <meta name="description" content="A visionary startup playbook for the one‑person company of the AI age. PreAngel Solo Founder Systems: design systems, orchestrate agents, ship faster." />
+  <meta property="og:title" content="PreAngel — Solo Founder Systems" />
+  <meta property="og:description" content="A manifesto for the one‑person company of the AI age." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og/preangel-solo-founder-systems.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50:  '#eef9ff',
+              100: '#d8f1ff',
+              200: '#b6e4ff',
+              300: '#87d2ff',
+              400: '#49b8ff',
+              500: '#1f9bff',
+              600: '#0d7de6',
+              700: '#0b64b9',
+              800: '#0e5494',
+              900: '#0f4678',
+            },
+            ink: '#0b0f19',
+          },
+          boxShadow: {
+            glow: '0 0 0 2px rgb(31 155 255 / 0.15), 0 10px 30px -10px rgb(31 155 255 / 0.45)'
+          },
+          fontFamily: {
+            sans: ['ui-sans-serif','Inter','system-ui','-apple-system','Segoe UI','Roboto','Helvetica','Arial','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Flowbite -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.1/flowbite.min.css" rel="stylesheet" />
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.1/flowbite.min.js"></script>
+
+  <style>
+    .grain { position: relative; }
+    .grain:before {
+      content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .06; mix-blend-mode: multiply;
+      background-image: url('data:image/svg+xml;utf8,\
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">\
+        <filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2"/></filter>\
+        <rect width="100%" height="100%" filter="url(%23n)" opacity=".25"/>\
+      </svg>');
+    }
+  </style>
+</head>
+<body class="bg-ink text-white antialiased grain">
+  <!-- Top Gradient Aura -->
+  <div class="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(60%_40%_at_50%_0%,rgba(31,155,255,0.35),transparent_60%)]"></div>
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-ink/60 border-b border-white/10">
+    <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <a href="#" class="flex items-center gap-3">
+          <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-primary-500/10 ring-1 ring-primary-400/30 shadow-glow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="h-5 w-5">
+              <path d="M4 12c0-4.418 3.582-8 8-8m0 0v5m0-5c4.418 0 8 3.582 8 8s-3.582 8-8 8-8-3.582-8-8" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </span>
+          <span class="font-semibold tracking-wide">PreAngel</span>
+        </a>
+        <div class="hidden gap-8 md:flex text-sm text-white/80">
+          <a href="#manifesto" class="hover:text-white">Manifesto</a>
+          <a href="#system" class="hover:text-white">System</a>
+          <a href="#architecture" class="hover:text-white">Architecture</a>
+          <a href="#loops" class="hover:text-white">Loops</a>
+          <a href="#faq" class="hover:text-white">FAQ</a>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="#call" class="inline-flex items-center rounded-xl bg-primary-500 px-4 py-2 text-sm font-semibold text-white shadow-glow hover:bg-primary-400 transition">Start Building</a>
+          <button data-collapse-toggle="nav-cta" type="button" class="md:hidden inline-flex items-center p-2 rounded-lg hover:bg-white/5 focus:outline-none" aria-controls="nav-cta" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="hidden md:hidden" id="nav-cta">
+      <div class="space-y-1 px-4 pb-4 pt-2 text-sm text-white/80">
+        <a href="#manifesto" class="block rounded-lg px-3 py-2 hover:bg-white/5">Manifesto</a>
+        <a href="#system" class="block rounded-lg px-3 py-2 hover:bg-white/5">System</a>
+        <a href="#architecture" class="block rounded-lg px-3 py-2 hover:bg-white/5">Architecture</a>
+        <a href="#loops" class="block rounded-lg px-3 py-2 hover:bg-white/5">Loops</a>
+        <a href="#faq" class="block rounded-lg px-3 py-2 hover:bg-white/5">FAQ</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-16">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <span class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs text-white/70">
+            <span class="h-1.5 w-1.5 rounded-full bg-primary-400"></span>
+            Manifesto • Company of One
+          </span>
+          <h1 class="mt-5 text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+            PreAngel <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-300 to-white">Solo Founder Systems</span>
+          </h1>
+          <p class="mt-5 text-lg text-white/80 max-w-xl">
+            A visionary startup playbook for the one‑person company of the AI age. Design systems, orchestrate agents, and ship products with the leverage of many.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#manifesto" class="inline-flex items-center rounded-xl bg-primary-500 px-5 py-3 text-sm font-semibold text-white shadow-glow hover:bg-primary-400 transition">Read the Manifesto</a>
+            <a href="#system" class="inline-flex items-center rounded-xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-white/90 hover:bg-white/10 transition">Explore the System</a>
+          </div>
+          <p class="mt-6 text-sm text-white/60">Automation is the new team. Documentation is the new memory. AI is the new co‑founder.</p>
+        </div>
+        <div class="relative">
+          <div class="absolute -inset-6 -z-10 bg-[radial-gradient(40%_40%_at_70%_30%,rgba(31,155,255,0.35),transparent_60%)] blur-2xl"></div>
+          <div class="rounded-2xl border border-white/10 bg-gradient-to-b from-white/5 to-white/0 p-4 shadow-2xl">
+            <div class="rounded-xl bg-ink/70 ring-1 ring-white/10 p-4">
+              <div class="grid grid-cols-2 gap-4 text-xs">
+                <div class="rounded-xl border border-white/10 bg-white/5 p-4">
+                  <p class="font-semibold text-white/90">Create → Build → Ship → Learn</p>
+                  <p class="mt-2 text-white/70">Compounding loops turn ideas into products at founder speed.</p>
+                </div>
+                <div class="rounded-xl border border-white/10 bg-white/5 p-4">
+                  <p class="font-semibold text-white/90">Agents, Not Headcount</p>
+                  <p class="mt-2 text-white/70">Scale with interoperable systems instead of hires.</p>
+                </div>
+                <div class="rounded-xl border border-white/10 bg-white/5 p-4">
+                  <p class="font-semibold text-white/90">Two‑Stage Deployment</p>
+                  <p class="mt-2 text-white/70">Staging → Prod clarity with Cloud Run × Firebase.</p>
+                </div>
+                <div class="rounded-xl border border-white/10 bg-white/5 p-4">
+                  <p class="font-semibold text-white/90">Founder‑OS</p>
+                  <p class="mt-2 text-white/70">A living architecture of docs, agents, and pipelines.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Manifesto -->
+  <section id="manifesto" class="relative border-t border-white/10">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-20">
+      <h2 class="text-3xl sm:text-4xl font-bold">The New Kind of Founder</h2>
+      <p class="mt-6 text-lg text-white/80 leading-relaxed">
+        Once, it took a village to build a startup. Designers shaped the brand, engineers built the code, marketers told the story.
+        In the age of generative intelligence, those boundaries blur. One founder can hold the entire orchestra — thinking, building, designing, deploying, storytelling — all at once.
+        That founder is not superhuman. They are <em>system‑human</em>.
+      </p>
+      <div class="mt-10 grid sm:grid-cols-2 gap-6">
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <h3 class="font-semibold text-white/90">The Philosophy</h3>
+          <p class="mt-2 text-white/70">A single human, with the right architecture of tools, agents, and rituals, can create value at the scale once reserved for companies of many.</p>
+          <p class="mt-2 text-white/70">It’s not doing everything alone; it’s designing systems that do everything with you.</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <h3 class="font-semibold text-white/90">The Shift</h3>
+          <ul class="mt-2 text-white/70 space-y-2 list-disc list-inside">
+            <li>Automation is the new team</li>
+            <li>Documentation is the new memory</li>
+            <li>AI is the new co‑founder</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- System Overview -->
+  <section id="system" class="relative border-t border-white/10 bg-gradient-to-b from-white/[0.03] to-transparent">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
+      <div class="lg:flex lg:items-end lg:justify-between">
+        <div>
+          <h2 class="text-3xl sm:text-4xl font-bold">The System</h2>
+          <p class="mt-4 text-white/75 max-w-2xl">A living framework — part product studio, part operating system, part belief structure. It turns scattered effort into repeatable creation loops.</p>
+        </div>
+        <div class="mt-6 lg:mt-0">
+          <a href="#call" class="inline-flex items-center rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold hover:bg-white/10">Join the Movement</a>
+        </div>
+      </div>
+
+      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card template -->
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-primary-500/15 ring-1 ring-primary-400/30">
+              <span class="h-2 w-2 rounded-full bg-primary-400"></span>
+            </span>
+            <h3 class="font-semibold">Language — ReKey</h3>
+          </div>
+          <p class="mt-3 text-white/70">Rewrite and clarify your thinking. Communicate like a native; design like a strategist.</p>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-primary-500/15 ring-1 ring-primary-400/30">
+              <span class="h-2 w-2 rounded-full bg-primary-400"></span>
+            </span>
+            <h3 class="font-semibold">Voice — ReMic</h3>
+          </div>
+          <p class="mt-3 text-white/70">Speak across languages and borders. Real‑time bilingual presence.</p>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-primary-500/15 ring-1 ring-primary-400/30">
+              <span class="h-2 w-2 rounded-full bg-primary-400"></span>
+            </span>
+            <h3 class="font-semibold">Vision — RemixIt.art</h3>
+          </div>
+          <p class="mt-3 text-white/70">Remix stories and design identities. From concept to campaign‑ready visuals.</p>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-primary-500/15 ring-1 ring-primary-400/30">
+              <span class="h-2 w-2 rounded-full bg-primary-400"></span>
+            </span>
+            <h3 class="font-semibold">Knowledge — DocWhisper / ScribeFleet</h3>
+          </div>
+          <p class="mt-3 text-white/70">Turn every chat into living documentation. Teach the system as you build.</p>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-primary-500/15 ring-1 ring-primary-400/30">
+              <span class="h-2 w-2 rounded-full bg-primary-400"></span>
+            </span>
+            <h3 class="font-semibold">Deployment — Two‑Stage</h3>
+          </div>
+          <p class="mt-3 text-white/70">Staging → Prod clarity with Cloud Run × Firebase. Confidence, speed, and simplicity.</p>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-primary-500/15 ring-1 ring-primary-400/30">
+              <span class="h-2 w-2 rounded-full bg-primary-400"></span>
+            </span>
+            <h3 class="font-semibold">Incubation — Ship.Fail</h3>
+          </div>
+          <p class="mt-3 text-white/70">Birth new ideas fast. Prototype overnight; validate by morning.</p>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6 md:col-span-2 lg:col-span-3">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-primary-500/15 ring-1 ring-primary-400/30">
+              <span class="h-2 w-2 rounded-full bg-primary-400"></span>
+            </span>
+            <h3 class="font-semibold">Intelligence — Pandora (AI Co‑Founder)</h3>
+          </div>
+          <p class="mt-3 text-white/70">Coordinate agents and workflows. Keep brand voice, product context, and operating rituals aligned.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Architecture Table -->
+  <section id="architecture" class="relative border-t border-white/10">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20">
+      <h2 class="text-3xl sm:text-4xl font-bold">Architecture: Founder‑OS</h2>
+      <p class="mt-4 text-white/75 max-w-3xl">Operate as a Company of One with the leverage of many. Replace departments with interoperable systems.</p>
+
+      <div class="mt-10 overflow-hidden rounded-2xl border border-white/10">
+        <table class="min-w-full divide-y divide-white/10 text-left text-sm">
+          <thead class="bg-white/5">
+            <tr>
+              <th class="px-6 py-3 font-semibold">Company Function</th>
+              <th class="px-6 py-3 font-semibold">System Equivalent</th>
+              <th class="px-6 py-3 font-semibold">PreAngel Example</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-white/10">
+            <tr>
+              <td class="px-6 py-4">Ideation & Validation</td>
+              <td class="px-6 py-4">Hackathon generation</td>
+              <td class="px-6 py-4">Ship.Fail</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4">Branding & UX</td>
+              <td class="px-6 py-4">AI‑assisted design</td>
+              <td class="px-6 py-4">RemixIt.art</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4">Documentation & Knowledge</td>
+              <td class="px-6 py-4">Continuous doc generation</td>
+              <td class="px-6 py-4">DocWhisper / ScribeFleet</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4">Development & Deployment</td>
+              <td class="px-6 py-4">Two‑Stage CI/CD</td>
+              <td class="px-6 py-4">Cloud Run × Firebase</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4">Marketing & Copywriting</td>
+              <td class="px-6 py-4">Native‑tone rewriting</td>
+              <td class="px-6 py-4">ReKey</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4">Voice & Communication</td>
+              <td class="px-6 py-4">Bilingual real‑time</td>
+              <td class="px-6 py-4">ReMic</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4">Operations & Accounting</td>
+              <td class="px-6 py-4">Automated finance layer</td>
+              <td class="px-6 py-4">Mercury × QuickBooks</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mt-8 grid gap-6 sm:grid-cols-2">
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <h3 class="font-semibold">Paradigm Shift</h3>
+          <ul class="mt-3 text-white/70 space-y-2 list-disc list-inside">
+            <li>Hire people → Build systems</li>
+            <li>Scale headcount → Scale process</li>
+            <li>Departments → Loops</li>
+            <li>Management → Automation</li>
+            <li>Burnout → Flow</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <h3 class="font-semibold">One‑Sentence Summary</h3>
+          <p class="mt-3 text-white/70">A Solo Founder System is an AI‑powered operating model that replaces startup teams with interoperable systems — enabling one founder to think, build, and scale like many.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Loops -->
+  <section id="loops" class="relative border-t border-white/10 bg-gradient-to-b from-transparent to-white/[0.03]">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20">
+      <h2 class="text-3xl sm:text-4xl font-bold">Creation Loops</h2>
+      <p class="mt-4 text-white/75 max-w-3xl">Create → Build → Ship → Learn → Evolve. Each loop feeds the next. Every product becomes a seed for the next generation.</p>
+
+      <ol class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <li class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <span class="text-xs text-white/60">01</span>
+          <h3 class="mt-2 font-semibold">Create</h3>
+          <p class="mt-2 text-white/70">Generate 100 ideas. Prototype overnight. Name with intent.</p>
+        </li>
+        <li class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <span class="text-xs text-white/60">02</span>
+          <h3 class="mt-2 font-semibold">Build</h3>
+          <p class="mt-2 text-white/70">AI pair‑programming. Boilerplates and brand kits on tap.</p>
+        </li>
+        <li class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <span class="text-xs text-white/60">03</span>
+          <h3 class="mt-2 font-semibold">Ship</h3>
+          <p class="mt-2 text-white/70">Two‑Stage deploys: staging → prod with one tag.</p>
+        </li>
+        <li class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <span class="text-xs text-white/60">04</span>
+          <h3 class="mt-2 font-semibold">Learn</h3>
+          <p class="mt-2 text-white/70">DocWhisper turns progress into living docs and rituals.</p>
+        </li>
+      </ol>
+
+      <div class="mt-10 rounded-2xl border border-white/10 bg-white/5 p-6">
+        <blockquote class="text-lg leading-relaxed text-white/80">“From Founder → Architect of Agents. When you design your startup like software, you free yourself from the limits of time, scale, and organization.”</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ (Flowbite Accordion) -->
+  <section id="faq" class="relative border-t border-white/10">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-20">
+      <h2 class="text-3xl sm:text-4xl font-bold">FAQ</h2>
+      <div id="accordion-open" data-accordion="open" class="mt-8">
+        <h3 id="acc-1">
+          <button type="button" class="flex w-full items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/5 p-5 text-left text-white/90 hover:bg-white/10" data-accordion-target="#acc-1-body" aria-expanded="true" aria-controls="acc-1-body">
+            <span>Is this solopreneurship?</span>
+            <svg data-accordion-icon class="h-5 w-5 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path></svg>
+          </button>
+        </h3>
+        <div id="acc-1-body" class="hidden" aria-labelledby="acc-1">
+          <div class="p-5 text-white/70">It’s related, but different. Solo Founder Systems are about <em>system‑prenership</em> — designing interoperable systems and agents so one founder scales like many.</div>
+        </div>
+
+        <h3 id="acc-2" class="mt-4">
+          <button type="button" class="flex w-full items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/5 p-5 text-left text-white/90 hover:bg-white/10" data-accordion-target="#acc-2-body" aria-expanded="false" aria-controls="acc-2-body">
+            <span>What tools are required?</span>
+            <svg data-accordion-icon class="h-5 w-5 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path></svg>
+          </button>
+        </h3>
+        <div id="acc-2-body" class="hidden" aria-labelledby="acc-2">
+          <div class="p-5 text-white/70">PreAngel Stack: ReKey (language), ReMic (voice), RemixIt.art (vision), DocWhisper/ScribeFleet (knowledge), Cloud Run × Firebase (deploy), Ship.Fail (incubation), Pandora (AI co‑founder).</div>
+        </div>
+
+        <h3 id="acc-3" class="mt-4">
+          <button type="button" class="flex w-full items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/5 p-5 text-left text-white/90 hover:bg-white/10" data-accordion-target="#acc-3-body" aria-expanded="false" aria-controls="acc-3-body">
+            <span>What’s the business goal?</span>
+            <svg data-accordion-icon class="h-5 w-5 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path></svg>
+          </button>
+        </h3>
+        <div id="acc-3-body" class="hidden" aria-labelledby="acc-3">
+          <div class="p-5 text-white/70">A portfolio of micro‑SaaS products each targeting 10k MAU / $10k MRR — compounding into a sustainable, multi‑product company of one.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section id="call" class="relative border-t border-white/10 py-20">
+    <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold">One founder. Infinite systems.</h2>
+      <p class="mt-4 text-white/75">If you can dream, document, and deploy — you can build your own universe.</p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="#" class="inline-flex items-center rounded-xl bg-primary-500 px-6 py-3 text-sm font-semibold text-white shadow-glow hover:bg-primary-400 transition">Start with Ship.Fail</a>
+        <a href="#" class="inline-flex items-center rounded-xl border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold hover:bg-white/10">Talk to Pandora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+        <div class="text-sm text-white/60">© <span id="year"></span> PreAngel LLC — All rights reserved.</div>
+        <div class="text-sm text-white/60">Made in San Francisco • Built by a Company of One</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

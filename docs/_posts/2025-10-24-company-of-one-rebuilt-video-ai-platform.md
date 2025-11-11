@@ -10,9 +10,7 @@ tags:
 image: assets/2025/10-company-of-one-rebuilt-video-ai-platform/q.webp
 ---
 
-> And becoming an AI-Native Builder in the process.
-
-Hi, I’m Q, the **Founding Human** behind [LeyLine](https://leyline.me), an AI-native video production platform that empowers creators to produce cinematic content with ease.
+> Hi, I’m Q, the **Founding Human** behind [LeyLine](https://leyline.me), an AI-native video production platform that empowers creators to produce cinematic content with ease.
 
 ## 1) Timeline & Thesis
 
@@ -145,7 +143,7 @@ My `page.tsx` had over 2,000 lines. The AI was confused. I was confused. Progres
 
 I was also physically exhausted after staying up till 3 a.m. every day. The withdrawal symptoms showed as AI stopped giving me the dopamine hits that kept me going. I curled up in bed and cried for an entire weekend. Not poetic crying—physical, mind-throbbing, heart-aching crying. I didn’t know why I was doing this. I felt like a fraud. I wanted to quit.
 
-And then—like every cliché origin story—the mentor returned. Huan forced me back to product documentation. We generated 50+ pages of PRD from the codebase to accurately describe what the product had evolved into.  (https://github.com/ShipFail/fireprd)
+And then—like every cliché origin story—the mentor returned. Huan forced me back to product documentation. We generated 50+ pages of PRD from the codebase to accurately describe what the product had evolved into.  ([https://github.com/ShipFail/fireprd](https://github.com/ShipFail/fireprd))
 
 I wasn’t guessing what creators needed. I have lived the pain for years. I know why breakdowns collapse under versioning, why every asset change causes twenty continuity bugs, and why different framing conveys different moods. Visual storytelling is not just pixels and timelines. It is a thousand invisible rules that Hollywood has managed using spreadsheets, yelling, and traumatizing PAs for 100 years. If AI is going to replace that chaos, someone has to encode the workflow into clear, structured logic. But pulling all the bits and pieces out was hard. Painfully so.
 
@@ -258,7 +256,7 @@ Join the Vibe Filming Revolution - Work with an AI crew that understands story.
 **LeyLine**  
 **Your vision comes to life here.**
 
-Sign Up for LeyLine Beta: https://leyline.me
+Sign Up for LeyLine Beta: [https://leyline.me](https://leyline.me)
 
 Acknowledgments
 

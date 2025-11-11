@@ -43,7 +43,8 @@ Until speed, complexity, and old-world process collided—and everything broke.
 We designed a spaceship and staffed to build … a planetary empire.
 
 What we got:
-- Burned through two-thirds of the money half a year after funding. 
+
+- Burned through two-thirds of the money half a year after funding.
 - 400+ unmanaged Azure resources and cloud bills no one could explain—before we even launched
 - A prototype slower and more fragile than tools built ten years ago. The launchpad for the promised spaceship burnt all resources and still wasn't usable.
 - Constant rewrites, nothing ever shipping; the client pipeline we sold on dream talks walked out the door
@@ -59,6 +60,7 @@ From February to April 2025, I replaced the entire engineering team with senior 
 Our users weren’t pipeline engineers—they were storytellers and marketers who needed cinematic results fast. Agencies wanted to ship dozens of assets in parallel on bulk.
 
 We had to:
+
 - Redesign the UI and flow to cut creation time from hours to minutes.
 - Plug in new models as soon as they come out. (Sora 2, Veo 3.1, and Nano Banana all dropped within weeks of one another.
 - Enable parallel rendering for bulk, consistent output at scale.
@@ -70,12 +72,14 @@ It was clear that traditional product cycles couldn’t keep up. That realizatio
 ## 4) The Weekend I Did the Math
 
 ### Speed We Need
+
 - User feedback → Ship: 1 week max
 - New AI model drops → Integrate: same week
 - Competor ships a feature → Match or exceed: days
 - Market changes → Pivot: immediately
 
 ### Speed Humanly Possible (with traditional dev)
+
 - Feedback → Sprint planning → Spec → Dev → QA → Ship: 3–4 weeks
 - New AI model → Research → Spike → Architecture → Implement → Test: 2–3 weeks
 - Competitor feature → Product meeting → Estimation → Schedule → Build: 4–6 weeks
@@ -117,6 +121,7 @@ So this is my Kung Fu training story—but with software—over 30 days.
 I tried to learn Cursor a couple of months ago and got frustrated staring at a blank web page.
 
 Firebase Studio was the right choice for me because I knew nothing about building software. Firebase has:
+
 - Pre-configured auth, storage, Firestore
 - Auto-deployment
 - No DevOps cognitive tax
@@ -142,9 +147,9 @@ I was also physically exhausted after staying up till 3 a.m. every day. The with
 
 And then—like every cliché origin story—the mentor returned. Huan forced me back to product documentation. We generated 50+ pages of PRD from the codebase to accurately describe what the product had evolved into.  (https://github.com/ShipFail/fireprd)
 
-I wasn’t guessing what creators needed. I have lived the pain for years. I know why breakdowns collapse under versioning, why every asset change causes twenty continuity bugs, and why different framing conveys different moods. Visual storytelling is not just pixels and timelines. It is a thousand invisible rules that Hollywood has managed using spreadsheets, yelling, and traumatizing PAs for 100 years. If AI is going to replace that chaos, someone has to encode the workflow into clear, structured logic. But pulling all the bits and pieces out was hard. Painfully so. 
+I wasn’t guessing what creators needed. I have lived the pain for years. I know why breakdowns collapse under versioning, why every asset change causes twenty continuity bugs, and why different framing conveys different moods. Visual storytelling is not just pixels and timelines. It is a thousand invisible rules that Hollywood has managed using spreadsheets, yelling, and traumatizing PAs for 100 years. If AI is going to replace that chaos, someone has to encode the workflow into clear, structured logic. But pulling all the bits and pieces out was hard. Painfully so.
 
-It sounds ridiculous that I got lost in something I made just two weeks prior—but when one person suddenly has the power of ten engineers with AI, that same person can also f*ck up what used to take ten engineers to f*ck up. I didn’t even recognize my product anymore. For an entire week, I stopped building anything. I implemented the BMAD method. I studied and broke down the documentation into user stories and epics until I'm familiar with it again and can look at it in a structured, systematic manner. 
+It sounds ridiculous that I got lost in something I made just two weeks prior—but when one person suddenly has the power of ten engineers with AI, that same person can also f*ck up what used to take ten engineers to f*ck up. I didn’t even recognize my product anymore. For an entire week, I stopped building anything. I implemented the BMAD method. I studied and broke down the documentation into user stories and epics until I'm familiar with it again and can look at it in a structured, systematic manner.
 
 **Lesson 2:** AI can only be as clear as I am. The only fix is discipline.
 
@@ -155,6 +160,7 @@ It sounds ridiculous that I got lost in something I made just two weeks prior—
 I began using Claude with Gemini. First step: reduce all files below 500 lines so agents could reason without crawling a novel every time. The user stories and updated documentation made it work.
 
 Two breakthroughs:
+
 1) Claude understood enough so it doesn't break major flows during the refactor.  
 2) I finally understood enough not to be afraid of breaking things in the refactor. I was ready to do it again.
 
@@ -208,15 +214,17 @@ Now, back to why and how I’m continuing to build LeyLine.
 Production teams—like dev teams—were built for a world where labor was slow and expensive.
 
 Now: **AI is the team.**
+
 - The assistant director? An AI agent who studied Dutch angles.
 - The compositor? Instant vision-to-video.
 - The pipeline? Script → Breakdowns → Design → Keyframes → Render → Assembly—**handled**.
 
 Mirroring the Vibe Coding workflows, I built around 30 specialized agents across the entire creative pipeline. They are any creator’s AI crew — friends I wish I had when I wanted my script to turn to screen. With LeyLine, creators make a publishable trailer in hours instead of 3–12 weeks. That is the economic transformation.
 
-The future of creative work is not “AI replacing humans.” The future is one director-brain paired with a precise AI crew that understands story. A human making calls only humans can make. An AI instantly executing everything humans hate doing. Ten percent human genius, ninety percent machine throughput. That is what LeyLine builds into muscle memory. 
+The future of creative work is not “AI replacing humans.” The future is one director-brain paired with a precise AI crew that understands story. A human making calls only humans can make. An AI instantly executing everything humans hate doing. Ten percent human genius, ninety percent machine throughput. That is what LeyLine builds into muscle memory.
 
 Overnight, creativity is entering the era of DTC:
+
 - Direct-to-Camera
 - Direct-to-Consumer
 - Direct-to-Culture
@@ -229,7 +237,7 @@ The need for gatekeepers is dying. And, in a way we have never seen before, tale
 
 I never worked this hard in my life. I felt like a pet husky who did cuteness his entire life for a living, suddenly thrown into Antarctica and told to pull a rescue sled. (*Call of the Wild* is a great book to revisit for anyone who has to learn new skills. I kid you not—this kept me going, together with *The Martian*, *Army of One*, and a cult-classic Japanese film, *Getting Any?*, when I felt totally devastated.)
 
-But that’s the point of any story: true character reveals itself only when something is at stake. Underneath the smooth-talking CEO with the professional corporate sellout smile was a stubborn woman who simply refused to stay down and wouldn’t take no for an answer. I started this. I wanted an AI pipeline to make my freaking movies. I’ll do it myself 100 times over if no one else gives it to me. 
+But that’s the point of any story: true character reveals itself only when something is at stake. Underneath the smooth-talking CEO with the professional corporate sellout smile was a stubborn woman who simply refused to stay down and wouldn’t take no for an answer. I started this. I wanted an AI pipeline to make my freaking movies. I’ll do it myself 100 times over if no one else gives it to me.
 
 Anyway, it all began with a story. So I’ll end with one.
 
@@ -239,12 +247,11 @@ That’s where new industries begin—behind forbidden doors, entered by people 
 
 Season 2 of LeyLine is not a rebuild. It is a rollout. The product is live in private hands. The first creators are already making their dream shows with a fraction of the budget and none of the begging. Our north star is simple: **storytellers publish every week**, not every year. Movies used to be a miracle. Now they are a workflow. Campaign videos used to be out of reach, now they can be generated at anyone's fingertips.
 
-If I can vibe-code the vibe-filming tool in a month—with no training, no budget, just anger and persistence—then anyone with a story can vibe-film their blockbuster today. 
+If I can vibe-code the vibe-filming tool in a month—with no training, no budget, just anger and persistence—then anyone with a story can vibe-film their blockbuster today.
 
-So.
 ---
 
-## 13) Walk Through That Door 
+## 13) Walk Through That Door
 
 Join the Vibe Filming Revolution - Work with an AI crew that understands story.
 
@@ -255,10 +262,11 @@ Sign Up for LeyLine Beta: https://leyline.me
 
 Acknowledgments
 
-Deep thanks to Huan — both the inciting incident and the Deus Ex Machina in this story. 
+Deep thanks to Huan — both the inciting incident and the Deus Ex Machina in this story.
 
 The tools born from that chaos:
+
 - FirePRD • [https://github.com/ShipFail/fireprd](https://github.com/ShipFail/fireprd)
 - FireGen • [https://github.com/ShipFail/firegen](https://github.com/ShipFail/firegen)
 
-...and I'm sure, many more to come, may yet define the new creative stack for AI-native builders.   
+...and I'm sure, many more to come, may yet define the new creative stack for AI-native builders.

@@ -10,6 +10,7 @@ tags:
   - featured
 image: assets/2016/09-selling-startup-via-elevator-pitch/slide-01.jpg
 ---
+<!-- markdownlint-disable MD052 -->
 
 如果只有30秒，如何通过项目介绍打动投资人，让他对你有兴趣？  
 

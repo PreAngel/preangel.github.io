@@ -8,12 +8,16 @@
   "MD034": false,
   "MD033": {
     "allowed_elements": [
+      "a",
+      "div",
       "cite",
       "code",
       "del",
       "dl",
       "dt",
       "dd",
+      "link",
+      "iframe",
       "script",
       "var"
     ]

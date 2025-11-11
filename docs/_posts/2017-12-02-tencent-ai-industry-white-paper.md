@@ -9,6 +9,7 @@ tags:
   - tencent
 image: assets/2017/12-tencent-ai-white-paper/white-paper-18.jpg
 ---
+<!-- markdownlint-disable MD052 -->
 
 > 全球AI领域投资规模前13名的投资机构均由中美两国独占，其中中方包括：IDG资本、创新工厂、经纬中国、真格基金和PreAngel。
 

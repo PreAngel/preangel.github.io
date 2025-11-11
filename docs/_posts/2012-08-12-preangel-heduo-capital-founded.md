@@ -71,7 +71,7 @@ image: assets/2012/08-12-heduo-lp-group-photo.jpg
 
 <!-- markdownlint-disable MD033 -->
 <p align="center">
-  <img src="{{ 'assets/2012/08-13-leo-huan.jpg' | relative_url }}" width="300px">
+  <img src="{{ 'assets/2012/08-13-leo-huan.jpg' | relative_url }}" alt="Leo and Huan" width="300px">
 </p>
 
 荷多基金重点关注的方向：O2O+SoLoMo以及社会化电商。

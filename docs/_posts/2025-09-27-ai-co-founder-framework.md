@@ -139,4 +139,3 @@ I’m applying it daily at [PreAngel](https://pre-angel.com), where I build solo
 If you’re exploring multi-agent design, agent stacks, or solo founder systems with AI teammates, reach out — let’s jam.
 
 > **Build with agents. Ship with soul. Evolve through failure.**
-

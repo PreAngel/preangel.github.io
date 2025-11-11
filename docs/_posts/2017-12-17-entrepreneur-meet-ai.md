@@ -10,6 +10,7 @@ tags:
   - featured
 image: assets/2017/12-entrepreneur-meet-ai/huan-ai-talk-01.jpg
 ---
+<!-- markdownlint-disable MD052 -->
 
 2017年，人工智能开始不断的从我们想象中的遥远世界里，迅速的融入到我们生活和工作中，成为了一种新的生活方式。技术天翻地覆的变革不断的跳到我们面前，投资人和创业者们该如何抓住未来最大的人工智能机会？
 

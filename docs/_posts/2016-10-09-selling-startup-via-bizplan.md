@@ -10,6 +10,7 @@ tags:
   - featured
 image: assets/2016/10-selling-startup-via-bizplan/slide-01.jpg
 ---
+<!-- markdownlint-disable MD052 -->
 
 BizPlan 商业计划书是创业者融资过程中写给投资人看的项目介绍，**写BP你首先要尝试理解投资人的需求，以及关注点**。
 

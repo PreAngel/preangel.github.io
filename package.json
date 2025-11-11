@@ -1,8 +1,9 @@
 {
   "name": "pre-angel.com",
-  "version": "0.2.110",
+  "version": "0.3.0",
   "description": "PreAngel Official Website",
   "main": "index.js",
+  "type": "module",
   "directories": {
     "doc": "docs"
   },
@@ -14,7 +15,7 @@
     "lint:md": "markdownlint README.md 'docs/**/*.md'",
     "lint:fn": "file-name-linter .file-name-linter.json",
     "test": "npm run lint && npm run test:unit",
-    "test:unit": "ts-node --files ./node_modules/.bin/blue-tape 'src/**/*.spec.ts' 'tests/**/*.spec.ts'"
+    "test:unit": "vitest run"
   },
   "repository": {
     "type": "git",
@@ -31,17 +32,22 @@
   },
   "homepage": "https://github.com/PreAngel/pre-angel.com#readme",
   "devDependencies": {
-    "@chatie/eslint-config": "^0.8.1",
-    "@chatie/git-scripts": "^0.2.5",
-    "@chatie/tsconfig": "^0.6.1",
-    "@types/glob": "^7.1.1",
+    "@eslint/js": "^9.39.1",
     "@types/image-size": "^0.7.0",
+    "@typescript-eslint/eslint-plugin": "^8.14.0",
+    "@typescript-eslint/parser": "^8.14.0",
+    "eslint": "^9.39.1",
     "file-box": "^0.8.27",
-    "glob": "^7.1.4",
+    "file-name-linter": "^1.1.0",
+    "globals": "^15.12.0",
     "image-size": "^0.7.4",
-    "is-pr": "^1.1.0",
+    "is-pr": "^2.0.0",
+    "markdownlint-cli": "^0.40.0",
     "probe-image-size": "^4.0.0",
-    "tstest": "^0.4.2"
+    "tsx": "^4.20.6",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.14.0",
+    "vitest": "^2.1.4"
   },
   "git": {
     "scripts": {

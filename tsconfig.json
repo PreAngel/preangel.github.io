@@ -1,12 +1,24 @@
 {
-  "extends": "@chatie/tsconfig",
   "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "outDir": "dist",
+    "rootDir": ".",
+    "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "types": [
+      "node"
+    ]
   },
   "exclude": [
     "node_modules/",
     "dist/",
-    "tests/fixtures/",
+    "tests/fixtures/"
   ],
   "include": [
     "app/**/*.ts",
@@ -15,6 +27,6 @@
     "examples/**/*.ts",
     "scripts/**/*.ts",
     "src/**/*.ts",
-    "tests/**/*.spec.ts",
-  ],
+    "tests/**/*.spec.ts"
+  ]
 }

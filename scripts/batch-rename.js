@@ -1,4 +1,4 @@
-const fs = require('fs')
+import fs from 'node:fs'
 
 fs.readdir('.', doRename)
 
@@ -8,24 +8,24 @@ function doRename(err, fileList) {
         return
     }
 
-    fileList.forEach(function(element) {
-        if (/\.jpg/.test(element)) {
-            if (/^创业者如何/.test(element)) {
-                // console.log(element)
-                matches = /(\d+)\.jpg/.exec(element)
-
-                const n = matches[1]
-                // 人工智能世代降临 (36).png
-                const target = `huan-ai-talk-${n}.jpg`
-                console.log(target)
-                fs.rename(element, target, function(err) {
-                    if ( err ) {
-                        console.log('ERROR: ' + err)
-                        return
-                    }
-                    console.log('rename ', element, target)
-                });
+    fileList.forEach(element => {
+        if (/\.jpg/.test(element) && /^创业者如何/.test(element)) {
+            const matches = /(\d+)\.jpg/.exec(element)
+            if (!matches) {
+                return
             }
-        }           
-    }, this);
+
+            const n = matches[1]
+            // 人工智能世代降临 (36).png
+            const target = `huan-ai-talk-${n}.jpg`
+            console.log(target)
+            fs.rename(element, target, err2 => {
+                if (err2) {
+                    console.log('ERROR: ' + err2)
+                    return
+                }
+                console.log('rename ', element, target)
+            })
+        }
+    })
 }

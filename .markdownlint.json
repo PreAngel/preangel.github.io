@@ -18,6 +18,7 @@
       "dd",
       "link",
       "iframe",
+      "img",
       "script",
       "var"
     ]

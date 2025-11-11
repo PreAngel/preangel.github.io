@@ -1,15 +1,13 @@
-#!/usr/bin/env ts-node
+import { expect, test } from 'vitest'
 
-import test  from 'tstest'
+import { prNumberToTitle } from './pr-number-to-title.js'
 
-import { prNumberToTitle } from './pr-number-to-title'
-
-test.skip('pr number to title', async t => {
+test.skip('pr number to title', async () => {
   const ORG = 'bupt'
   const REPO = 'ai-ml.club'
   const PR = 141
   const EXPECTED_TITLE = 'fix S2E13'
 
   const title = await prNumberToTitle(ORG, REPO, PR)
-  t.equal(title, EXPECTED_TITLE, 'should get the right pr title')
+  expect(title).toBe(EXPECTED_TITLE)
 })

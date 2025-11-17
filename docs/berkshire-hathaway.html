@@ -33,9 +33,11 @@
 
     <!-- Hero -->
     <main class="flex-1">
-      <section class="border-b border-slate-800/70 bg-gradient-to-b from-slate-950 via-slate-950 to-slate-900" id="manifesto">
-        <div class="mx-auto max-w-6xl px-4 py-16 lg:py-20 grid gap-12 lg:grid-cols-[minmax(0,1.2fr),minmax(0,1fr)] items-center">
-          <div>
+      <!-- Hero: v3 split-screen video (right) -->
+      <section class="border-b border-slate-800/70 bg-slate-950" id="manifesto">
+        <div class="mx-auto max-w-6xl px-4 py-16 lg:py-20 grid gap-10 lg:grid-cols-2 items-center">
+          <!-- Left: solid background text -->
+          <div class="relative z-10">
             <p class="text-xs font-semibold tracking-[0.22em] text-emerald-300/80 mb-4 uppercase">PreAngel Manifesto</p>
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight mb-4">
               A <span class="text-emerald-300">Berkshire‑style</span> holding company<br class="hidden sm:block" />
@@ -62,45 +64,27 @@
             </div>
           </div>
 
-          <!-- Hero Card: The Engine Snapshot -->
-          <div class="relative">
-            <div class="absolute inset-0 -translate-x-6 -translate-y-6 blur-3xl opacity-40 bg-gradient-to-br from-emerald-500/30 via-cyan-500/20 to-slate-900 pointer-events-none"></div>
-            <div class="relative rounded-2xl border border-slate-800/80 bg-slate-900/80 p-5 shadow-[0_0_60px_rgba(16,185,129,0.25)]">
-              <div class="flex items-center justify-between mb-4">
-                <div class="text-xs font-medium text-slate-400 uppercase tracking-[0.19em]">PreAngel Investment Engine</div>
-                <span class="inline-flex items-center gap-1 rounded-full bg-emerald-500/10 px-3 py-1 text-[10px] font-semibold text-emerald-300 border border-emerald-500/30">
-                  Permanent Capital
-                </span>
+          <!-- Right: video panel -->
+          <div class="relative h-64 sm:h-80 lg:h-[26rem] rounded-2xl overflow-hidden border border-slate-800 bg-slate-900/80 shadow-[0_0_80px_rgba(16,185,129,0.35)] cursor-pointer" id="hero-video-panel">
+            <video
+              id="hero-video"
+              class="absolute inset-0 w-full h-full object-cover"
+              src="https://cdn.preangel.ai/preangel-berkshire.mp4"
+              autoplay
+              muted
+              loop
+              playsinline
+              poster="/assets/berkshire-hero-poster.jpg"
+            ></video>
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/30 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-4 flex items-center justify-between text-[11px] pointer-events-none">
+              <div class="text-slate-100/95 font-semibold tracking-tight">
+                The PreAngel Engine in Motion
               </div>
-
-              <dl class="grid grid-cols-2 gap-3 mb-5 text-xs">
-                <div class="rounded-lg border border-slate-800 bg-slate-900/70 p-3">
-                  <dt class="text-slate-400 mb-1">Tax Identity</dt>
-                  <dd class="font-semibold text-slate-100">LLC taxed as C‑Corp</dd>
-                </div>
-                <div class="rounded-lg border border-slate-800 bg-slate-900/70 p-3">
-                  <dt class="text-slate-400 mb-1">Distribution Policy</dt>
-                  <dd class="font-semibold text-slate-100">No dividends. Ever.</dd>
-                </div>
-                <div class="rounded-lg border border-slate-800 bg-slate-900/70 p-3">
-                  <dt class="text-slate-400 mb-1">Core Strategy</dt>
-                  <dd class="font-semibold text-slate-100">Reinvest all gains</dd>
-                </div>
-                <div class="rounded-lg border border-slate-800 bg-slate-900/70 p-3">
-                  <dt class="text-slate-400 mb-1">Edge</dt>
-                  <dd class="font-semibold text-slate-100">QSBS × AI × Solo Founder</dd>
-                </div>
-              </dl>
-
-              <div class="rounded-xl border border-emerald-500/30 bg-gradient-to-br from-emerald-500/10 to-cyan-500/10 px-4 py-3 text-[11px] text-emerald-100">
-                <p class="font-semibold mb-1">Core Compounding Loop</p>
-                <ol class="list-decimal list-inside space-y-1 text-emerald-50/90">
-                  <li>Acquire or build AI‑native startups (QSBS where possible).</li>
-                  <li>Let them compound value with minimal overhead via agents.</li>
-                  <li>Realize gains (0% if QSBS, 21% otherwise) inside PreAngel.</li>
-                  <li>Reallocate capital into the next generation of AI ventures.</li>
-                </ol>
-              </div>
+              <span id="hero-video-audio-pill" class="inline-flex items-center gap-1 rounded-full bg-slate-950/70 px-3 py-1 text-[10px] font-semibold text-emerald-300 border border-emerald-500/40 backdrop-blur">
+                <span id="hero-video-audio-icon" aria-hidden="true">🔇</span>
+                <span id="hero-video-audio-label">Tap to Unmute</span>
+              </span>
             </div>
           </div>
         </div>
@@ -334,6 +318,50 @@
   <script>
     // Simple current year injection
     document.getElementById('year-span').textContent = new Date().getFullYear();
+    
+    // Hero video click-to-mute/unmute toggle (same as v3 variant)
+    (function () {
+      var panel = document.getElementById('hero-video-panel');
+      var video = document.getElementById('hero-video');
+      var pill  = document.getElementById('hero-video-audio-pill');
+
+      if (!panel || !video || !pill) return;
+
+      panel.addEventListener('click', function () {
+        // Toggle muted state
+        var willUnmute = video.muted;
+        video.muted = !video.muted;
+
+        // If unmuting, try to play in case autoplay was blocked
+        if (willUnmute) {
+          var p = video.play();
+          if (p && typeof p.catch === 'function') {
+            p.catch(function () { /* ignore autoplay errors */ });
+          }
+        }
+
+        // Update pill label & icon
+        var label = document.getElementById('hero-video-audio-label');
+        var icon  = document.getElementById('hero-video-audio-icon');
+        if (label && icon) {
+          if (video.muted) {
+            label.textContent = 'Tap to Unmute';
+            icon.textContent  = '🔇';
+          } else {
+            label.textContent = 'Tap to Mute';
+            icon.textContent  = '🔊';
+          }
+        }
+
+        // Brief border glow animation
+        panel.classList.remove('ring-2', 'ring-emerald-400/80');
+        void panel.offsetWidth; // force reflow to restart animation
+        panel.classList.add('ring-2', 'ring-emerald-400/80');
+        setTimeout(function () {
+          panel.classList.remove('ring-2', 'ring-emerald-400/80');
+        }, 250);
+      });
+    })();
   </script>
 </body>
 </html>
